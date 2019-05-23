@@ -2,13 +2,27 @@
 
 //1. In the nav element, target the span element with the id of 'matCount' and change the number from 0 to 11.
 
+var spanBox = document.getElementById('matCount');
+spanBox.innerHTML = 11;
+
 //2. In the nav element, target the span element with the id of 'msgCount' and change the number from 0 to 23.
+
+msgCount.innerHTML = 23; // shortcut only works with ids
 
 //3. In the div id data section, target the div element with the id of 'fullname' and change Full Name to Ronald McDonald.
 
+fullname.innerHTML = 'Ronald McDonald';
+
 //4. In the div id data section, target the div element with the id of 'age' and change Age to 63 Years Old.
 
+document.getElementById('age').innerHTML = 63; // also another way to write it out
+
 //5. In the div id data section, create a div with an id of job and give it the following information: Clown and Restauranteur.
+
+var divElem = document.createElement('div');
+divElem.id = 'job';
+divElem.innerHTML = 'Clown and Restauranteur';
+data.appendChild(divElem); // location id, append (what)
 
 //6. In the div id data section, create a div with an id of hobbies and give it the following information: Long romantic walks on the beach, candle light Big Mac dinners and tormenting the King.
 
